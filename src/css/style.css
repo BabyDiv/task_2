@@ -129,8 +129,8 @@ input[type="text"], input[type="date"], select {
     text-align: left;
   }
 
-  input[type="text"], input[type="date"], select {
-    width: calc(100% - 20px);
+  input[type="text"], input[type="date"], form {
+    width: 100%;
     margin-left: 10px;
 }
 
