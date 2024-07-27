@@ -50,6 +50,10 @@ table {
   padding: 15px 0;
 }
 
+.row-1, .row-2, .row-3 {
+  display: none;
+}
+
 .section__table-row {
   border-bottom: 1px solid #dddee4;
 }
@@ -95,7 +99,7 @@ input[type="text"], input[type="date"], select {
     display: block;
   }
 
-  .row-2, .row-3 {
+  .row-1, .row-2, .row-3 {
     display: none;
   }
 
