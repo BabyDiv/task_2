@@ -142,6 +142,7 @@ input[type="text"], input[type="date"], select {
     position: absolute;
     white-space: normal;
     left: 0;
+    top: 17px;
   }
 
   input[type="text"], input[type="date"], form {
