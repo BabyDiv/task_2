@@ -28,35 +28,27 @@ function createRow() {
 }
 
   document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.delete-btn').forEach(button => {
-      button.addEventListener('click', function() {
-        const row = this.closest('tr');
-        row.remove();
-      });
+    document.addEventListener('click', function(event) {
+      if (event.target.classList.contains('delete-btn')) {
+        const row = event.target.closest('tr');
+        if (row) {
+          row.remove();
+        }
+      }
     });
   });
 
-
-
-        // Event delegation for delete buttons
-      //   document.getElementById('myTable').addEventListener('click', function(event) {
-      //     if (event.target.classList.contains('delete-btn')) {
-      //         const row = event.target.closest('TR');
-      //         row.remove();
-      //     }
-      // });
-
-      document.addEventListener('DOMContentLoaded', () => {
-        const burgerMenu = document.getElementById('burger-menu');
-        const navList = document.getElementById('nav-list');
+  document.addEventListener('DOMContentLoaded', () => {
+    const burgerMenu = document.getElementById('burger-menu');
+    const navList = document.getElementById('nav-list');
     
-        burgerMenu.addEventListener('click', () => {
-            navList.classList.toggle('show');
-        });
-    
-        window.addEventListener('click', (event) => {
-            if (!burgerMenu.contains(event.target) && !navList.contains(event.target)) {
-                navList.classList.remove('show');
-            }
-        });
+    burgerMenu.addEventListener('click', () => {
+        navList.classList.toggle('show');
     });
+    
+    window.addEventListener('click', (event) => {
+        if (!burgerMenu.contains(event.target) && !navList.contains(event.target)) {
+            navList.classList.remove('show');
+        }
+    });
+  });

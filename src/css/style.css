@@ -69,7 +69,6 @@ th {
   font-weight: bold;
 }
 
-
 input[type="text"], input[type="date"], select {
   box-sizing: border-box;
   width: 100%;
@@ -97,11 +96,8 @@ input[type="text"], input[type="date"], select {
 
   thead {
     position: absolute;
-    width: auto;
+    width: 32%;
     display: block;
-    /* clip: rect(1px, 1px, 1px, 1px);
-    height: 1px;
-    width: 1px; */
     overflow: hidden;
   }
 
@@ -158,7 +154,6 @@ input[type="text"], input[type="date"], select {
   overflow-x: hidden;
   border: 1px solid #dddee4;
   border-radius: 4px;
-  /* margin-left: 14%; */
   padding-right: 2px;
   text-align: center;
 }
@@ -203,7 +198,6 @@ input[type="text"], input[type="date"], select {
   font-weight: bold;          
   border: none;              
   padding: 4px 20px;
-  /* margin-left: 28%;       */
   border: 1.7px solid #dddee4;
   border-radius: 12px;      
   cursor: pointer;          
