@@ -12,11 +12,11 @@ function createRow() {
   var cell5 = document.createElement("TD");
 
 
-  cell1.innerHTML = "<input type='text'>";
-  cell2.innerHTML = "<form><label for='type'></label><select required='' name='capability_commitments' class='capability_commitments' id='capability_commitments_type_1'><option value='resource'>Resource</option><option value='competence'>Competence</option><option value='habit' selected=''>Habit</option></select></form>";
-  cell3.innerHTML = "<input type='text'>";
-  cell4.innerHTML = "<input type='date' id='start' class='start' 'name='trip-start' value='2024-07-26' min='2024-07-26' max='2025-07-26'>";
-  cell5.innerHTML = "<button class='delete-btn'>Delete</button>";
+  cell1.innerHTML = "<label for='text'>Capability</label><input type='text'>";
+  cell2.innerHTML = "<form><label for='type'>Type</label><select required='' name='capability_commitments' class='capability_commitments' id='capability_commitments_type_1'><option value='resource'>Resource</option><option value='competence'>Competence</option><option value='habit' selected=''>Habit</option></select></form>";
+  cell3.innerHTML = "<label for='approach'>Approach</label><input type='text'>";
+  cell4.innerHTML = "<label for='date'>Start date</label><input type='date' id='start' class='start' 'name='trip-start' value='2024-07-26' min='2024-07-26' max='2025-07-26'>";
+  cell5.innerHTML = "<label for='delete'>Delete</label><button class='delete-btn'>Delete</button>";
 
   newRow.appendChild(cell1);
   newRow.appendChild(cell2);
@@ -47,8 +47,8 @@ function createRow() {
     });
     
     window.addEventListener('click', (event) => {
-        if (!burgerMenu.contains(event.target) && !navList.contains(event.target)) {
-            navList.classList.remove('show');
-        }
+      if (!burgerMenu.contains(event.target) && !navList.contains(event.target)) {
+        navList.classList.remove('show');
+      }
     });
   });
