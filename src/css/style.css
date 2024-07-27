@@ -1,0 +1,285 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+body {
+  background-color: #f3f4f9;
+  padding: 0 10%;
+}
+
+.section__table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.logo {
+  width: 200px;
+  height: 46px;
+}
+
+header {
+  padding-top: 32px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%
+}
+
+table {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: separate;
+  border-spacing: 0 20px;
+  border-radius: 24px;       
+  border: 1px solid transparent;
+  background-color: #ffffff;
+  overflow: hidden;          
+  padding: 0 32px 40px 32px;
+  margin: 20px auto;
+}
+
+.thead__th {
+  text-align: center;
+  font-size: 16px;
+  padding: 15px 0;
+}
+
+.section__table-row {
+  border-bottom: 1px solid #dddee4;
+}
+
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #dddee4;
+}
+
+td {
+  position: relative;
+}
+
+th {
+  font-weight: bold;
+}
+
+
+input[type="text"], input[type="date"], select {
+  box-sizing: border-box;
+  width: 100%;
+  margin-left: 0;
+  padding: 4px;
+  border: 1px solid #dddee4;
+  border-radius: 4px;
+  background: transparent;
+}
+
+@media (max-width: 768px) {
+
+  body {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  .row-2, .row-3 {
+    display: none;
+  }
+
+  thead {
+    position: absolute;
+    width: auto;
+    display: block;
+    /* clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    width: 1px; */
+    overflow: hidden;
+  }
+
+  .thead__th {
+    font-size: 12px;
+    text-align: left;
+    vertical-align: middle;
+    border-bottom: none;
+    width: 100%;
+    white-space: normal;
+  }
+
+  tr {
+    padding: 20px 20px;
+    margin-bottom: 15px;
+  }
+
+  td {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: none;
+    position: relative;
+    padding-left: 40%;
+    text-align: left;
+  }
+
+  input[type="text"], input[type="date"], select {
+    width: calc(100% - 20px);
+    margin-left: 10px;
+}
+
+  td button {
+      width: 100%;
+  }
+
+  .delete-btn {
+    padding-left: 0;
+  }
+
+  .capability_commitments {
+    width: 100%;
+  }
+}
+
+.capability_commitments {
+  width: 100%;
+  max-height: none;
+  overflow-y: auto; 
+  overflow-x: hidden;
+  border: 1px solid #dddee4;
+  border-radius: 4px;
+  /* margin-left: 14%; */
+  padding-right: 2px;
+  text-align: center;
+}
+
+#myDropDown, #myDropDown2, #myDropDown3 {
+  width: 100%;
+  padding: 8px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #cdcdcd;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+.start {
+  margin-left: 16%;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 52px auto;
+  width: 200px;
+	height: 32px;
+	background: linear-gradient(#90FF77, #0A3FFE);
+	color: #fdfdfd;
+	border-radius: 12px;
+	border: none;
+}
+
+.btn:hover {
+  background: linear-gradient(#77ff79, #0a12fe);
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: #ffffff; 
+  color: #03228c;
+  font-weight: bold;          
+  border: none;              
+  padding: 4px 20px;
+  /* margin-left: 28%;       */
+  border: 1.7px solid #dddee4;
+  border-radius: 12px;      
+  cursor: pointer;          
+}
+
+.delete-btn:hover {
+  background-color: #dddee4;
+}
+
+.burger-menu {
+  display: block;
+  cursor: pointer;
+}
+
+.nav-list {
+  display: none;
+  flex-direction: column;
+  width: 30%;
+  position: absolute;
+  top: 68px;
+  right: 9%;
+  padding: 20px;
+  background: linear-gradient(#90FF77, #0A3FFE);
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.nav-item {
+  margin: 0 15px;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 16px;
+}
+
+.nav-item a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 15px;
+  display: block;
+}
+
+.nav-item a:hover {
+  background-color: #dddee4;
+}
+
+.nav-list.show {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .burger-menu {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #939499;
+    z-index: 1;
+  }
+
+  .nav-item {
+    margin: 0;
+    text-align: center;
+  }
+
+  .nav-item a {
+    padding: 15px 0;
+    border-bottom: 1px solid #dddee4;
+  }
+
+  .nav-list.show {
+    display: flex;
+  }
+}
