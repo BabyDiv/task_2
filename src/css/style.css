@@ -257,7 +257,7 @@ input[type="text"], input[type="date"], select {
     flex-direction: column;
     width: 100%;
     position: absolute;
-    top: 50px;
+    top: 68px;
     left: 0;
     background-color: #939499;
     z-index: 1;
@@ -270,7 +270,6 @@ input[type="text"], input[type="date"], select {
 
   .nav-item a {
     padding: 15px 0;
-    border-bottom: 1px solid #dddee4;
   }
 
   .nav-list.show {
