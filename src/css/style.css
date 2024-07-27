@@ -76,6 +76,7 @@ th {
 input[type="text"], input[type="date"], select {
   box-sizing: border-box;
   width: 100%;
+  text-align: center;
   margin-left: 0;
   padding: 4px;
   border: 1px solid #dddee4;
@@ -141,11 +142,11 @@ input[type="text"], input[type="date"], select {
     position: absolute;
     white-space: normal;
     left: 0;
-
   }
 
   input[type="text"], input[type="date"], form {
     width: 100%;
+    text-align: center;
 }
 
   td button {
