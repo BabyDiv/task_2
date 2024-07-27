@@ -146,7 +146,6 @@ input[type="text"], input[type="date"], select {
 
   input[type="text"], input[type="date"], form {
     width: 100%;
-    margin-left: 10px;
 }
 
   td button {
