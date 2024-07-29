@@ -18,18 +18,6 @@ body {
   height: 46px;
 }
 
-header {
-  padding-top: 32px;
-  margin: 0 auto;
-  margin-bottom: 40px;
-}
-
-.main-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%
-}
 
 table {
   width: 100%;
@@ -236,6 +224,7 @@ input[type="text"], input[type="date"], select {
 .nav-list {
   display: none;
   flex-direction: column;
+  list-style-type: none;
   width: 30%;
   position: absolute;
   top: 68px;
